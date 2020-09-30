@@ -1,4 +1,4 @@
-# TEK305 - Rekayasa Perangkat Lunak
+# TEK305 - Pemrograman Berbasis Web
 Dokumentasi Tugas Mata Kuliah PBW
 
 ## Dosen Pengajar
