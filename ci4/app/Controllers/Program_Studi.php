@@ -14,30 +14,37 @@ class Program_Studi extends BaseController
     
     public function index()
 	{
+        $data['title'] = 'Program Studi';
+        $data['page'] = 'Program Studi';
         $data['session'] = $this->session->getFlashData('response');
         $data['dataProdi'] = $this->prodi->get()->getResult();
 
-        echo view('header_v');
+        // echo view('header_v');
         echo view('program_studi_v', $data);
-        echo view('footer_v');
+        // echo view('footer_v');
     }
 
     public function add()
     {
-        echo view('header_v');
-        echo view('program_studi_form_v');
-        echo view('footer_v');
+        $data['title'] = 'Program Studi';
+        $data['page'] = 'Program Studi';
+        // echo view('header_v');
+        echo view('program_studi_form_v', $data);
+        // echo view('footer_v');
     }
 
     public function edit($id)
     {
+        $data['title'] = 'Program Studi';
+        $data['page'] = 'Program Studi';
+
         $where = ['kode_prodi' => $id];
 
         $data['dataProdi'] = $this->prodi->get($where)->getResult()[0];
 
-        echo view('header_v');
+        // echo view('header_v');
         echo view('program_studi_form_v', $data);
-        echo view('footer_v');
+        // echo view('footer_v');
     }
 
     public function save()

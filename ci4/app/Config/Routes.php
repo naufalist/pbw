@@ -32,6 +32,30 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'Beranda::index');
+
+/* Hobi */
+$routes->get('/Hobi/add', 'Hobi::add');
+$routes->get('/Hobi/edit/(:segment)', 'Hobi::edit/$1');
+$routes->delete('/Hobi/(:num)', 'Hobi::delete/$1');
+$routes->get('/Hobi/(:any)', 'Hobi::index');
+
+/* Agama */
+$routes->get('/Agama/add', 'Agama::add');
+$routes->get('/Agama/edit/(:segment)', 'Agama::edit/$1');
+$routes->delete('/Agama/(:num)', 'Agama::delete/$1');
+$routes->get('/Agama/(:any)', 'Agama::index');
+
+/* Mahasiswa */
+$routes->get('/Mahasiswa/add', 'Mahasiswa::add');
+$routes->get('/Mahasiswa/edit/(:segment)', 'Mahasiswa::edit/$1');
+$routes->delete('/Mahasiswa/(:alphanum)', 'Mahasiswa::delete/$1');
+$routes->get('/Mahasiswa/(:any)', 'Mahasiswa::detail/$1');
+
+
+// $routes->get('/Mahasiswa', function(){
+// 	echo "mahasiswa";
+// });
+
 // $routes->get('/', 'Mahasiswa::ucapan');
 
 /**

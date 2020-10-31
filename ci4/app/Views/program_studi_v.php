@@ -1,4 +1,6 @@
+<?= $this->extend('layouts/app_v'); ?>
 
+<?= $this->section('content'); ?>
     
     <div class="jumbotron bg-purple text-white">
         <div class="container">
@@ -74,3 +76,5 @@
             <!-- <h2>Home</h2> -->
         </div>
     </section>
+
+<?= $this->endSection(); ?>

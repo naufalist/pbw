@@ -1,4 +1,6 @@
+<?= $this->extend('layouts/app_v'); ?>
 
+<?= $this->section('content'); ?>
     
     <div class="jumbotron bg-purple text-white">
         <div class="container">
@@ -35,3 +37,6 @@
 
         </div>
     </section>
+
+<?= $this->endSection(); ?>
+
